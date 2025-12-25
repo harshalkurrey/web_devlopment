@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Responsive Mobile-First Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 1rem;
+      margin: 0;
+      padding: 1rem;
+      line-height: 1.5;
+      background: #f0f0f0;
+      color: #333;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    main {
+      max-width: 90%;
+      margin: 1rem auto;
+      background: white;
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+    }
+    p {
+      font-size: 1rem;
+      margin: 1rem 0;
+    }
+    /* Larger screens - tablets and up */
+    @media (min-width: 100px) {
+      body {
+        font-size: 10px; /* Slightly bigger text */
+      }
+      main {
+        max-width: 100px;
+        padding: 2rem;
+      }
+      header {
+        font-size: 2rem;
+        padding: 1.5rem;
+      }
+    }
+    /* Even larger screens - desktops */
+    @media (min-width: 500px) {
+      body {
+        font-size: 1.25rem;
+      }
+      main {
+        max-width: 500px;
+        padding: 3rem;
+      }
+      header {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Responsive Mobile-First Design</header>
+  <main>
+    <img src="rungta image.jpeg" height="90" alt="Sample Image" />
+    <p>
+      This web page is designed with mobile-first principles using flexible units like rem and percentages.
+      It includes media queries to adapt layout and font sizes for tablets and desktops.
+    </p>
+  </main>
+</body>
+</html>
