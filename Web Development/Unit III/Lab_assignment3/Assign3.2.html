@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Control Flow</title>
+</head>
+<body>
+    <h2>Loop Comparisons</h2>
+    
+    <div id="for-output"><h3>For Loop (0 to 2):</h3></div>
+    <div id="while-output"><h3>While Loop (Active until false):</h3></div>
+    <div id="do-output"><h3>Do-While Loop (Runs at least once):</h3></div>
+
+    <script>
+        // FOR LOOP - Known iterations
+        const forDiv = document.getElementById('for-output');
+        for (let i = 0; i < 3; i++) {
+            forDiv.innerHTML += `<p>Iteration: ${i}</p>`;
+        }
+
+        // WHILE LOOP - Condition based
+        const whileDiv = document.getElementById('while-output');
+        let count = 0;
+        while (count < 2) {
+            whileDiv.innerHTML += `<p>Count is: ${count}</p>`;
+            count++;
+        }
+
+        // DO-WHILE LOOP - Always runs once
+        const doDiv = document.getElementById('do-output');
+        let x = 10;
+        do {
+            doDiv.innerHTML += `<p>Even though x is 10, this ran once.</p>`;
+        } while (x < 5);
+    </script>
+</body>
+</html>

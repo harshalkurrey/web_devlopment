@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Array Methods</h2>
+  <p id="output">["Apple", "Banana"]</p>
+
+  <button onclick="fruits.push('Orange'); show()">Push (Add End)</button>
+  <button onclick="fruits.pop(); show()">Pop (Remove End)</button>
+  <button onclick="fruits.unshift('Mango'); show()">Unshift (Add Start)</button>
+  <button onclick="fruits.shift(); show()">Shift (Remove Start)</button>
+
+  <script>
+    let fruits = ["Apple", "Banana"];
+    function show() {
+      document.getElementById("output").innerText = JSON.stringify(fruits);
+    }
+  </script>
+</body>
+</html>

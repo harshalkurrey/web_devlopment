@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Advanced CSS Styling Example</title>
+<style>
+  /* Body with background image and padding */
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('asthetic.jpg'); 
+    background-size: cover;  
+    background-position: center;
+    margin: 0;  
+    padding: 40px;  
+    box-sizing: border-box; 
+  }
+  .container {
+    width: 600px;
+    margin: 0 auto; 
+    padding: 30px;  
+    border: 5px solid #4A90E2; 
+    border-radius: 15px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); 
+    box-sizing: border-box;
+  }
+  h1 {
+    margin-bottom: 20px; 
+    padding-bottom: 10px; 
+    border-bottom: 3px solid #4A90E2; 
+    color: #333;
+  }
+  p {
+    margin-bottom: 15px; 
+    padding: 10px 15px;  
+    border-left: 4px solid #4A90E2; 
+    background-color: #f0f8ff;
+  }
+  /* Button demonstrating margin, padding, border & background */
+  .btn {
+    display: inline-block;
+    margin-top: 25px; 
+    padding: 12px 28px; 
+    border: 2px solid #4A90E2;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #6fa8dc, #3a79d8);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-sizing: border-box;
+  }
+  .btn:hover {
+    background: linear-gradient(135deg, #050b14, #6fa8dc);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Advanced CSS Box Model & Styling</h1>
+  <p>This paragraph demonstrates margins, padding, and borders as part of the CSS box model. Notice the space outside the border (margin) and the inner space (padding) inside the border.</p>
+  <p>Background images and colors add design layers, while borders create clear sections. Rounded corners and shadows add depth and polish.</p>
+  <button class="btn">Click Me</button>
+</div>
+</body>
+</html>

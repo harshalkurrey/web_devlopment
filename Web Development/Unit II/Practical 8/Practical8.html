@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS Selectors Demo</title>
+  <style>
+     /* universal selector */
+    * { box-sizing: border-box; }
+     /* id selector */
+    #hero { padding:16px; background:#cce1f7; border-radius:6px; margin-bottom:12px; }
+     /* class selector */
+    .note { padding:8px; border-left:4px solid #0b63d6; background:#f7fbff; }
+     /* descendant selector */
+    .card p { margin:0 0 8px; }
+     /* group selector */
+    h2, h3 { color:#1a3a6b; margin-bottom:8px; }
+     /* attribute selector example */
+    a[target="_blank"]::after { content: " (new)"; font-size:0.9rem; color:#666; }
+</style>
+</head>
+<body>
+  <section id="hero">
+    <h1>Selector Types</h1>
+    <p>This page demonstrates common CSS selectors in action.</p>
+  </section>
+  <article class="card">
+    <h2>Class & Descendant</h2>
+    <p class="note">A class-based note inside a .card element.</p>
+    <p>Another paragraph inside card (descendant selector used above).</p>
+  </article>
+  <section>
+    <h3>Group & attribute</h3>
+    <a href="https://example.com" target="_blank">External link</a>
+    <div style="margin-top:8px">
+      <span class="pill">Tag 1</span>
+      <span class="pill">Tag 2</span>
+    </div>
+  </section>
+</body>
+</html>

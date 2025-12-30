@@ -1,0 +1,65 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+
+header{
+  background:#e0bbff;color:#000000;padding:15px;text-align:center;
+}
+
+/* float layout (default) */
+.sidebar{
+  width:200px;
+  float:left;
+  background:#ff9fdf;
+  padding:15px;
+}
+.content{
+  margin-left:200px;
+  padding:15px;
+  background-color: rgb(144, 255, 150);
+}
+
+/* clear fix */
+.container::after{
+  content:"";display:block;clear:both;
+}
+
+/* ---------- Media Queries ---------- */
+
+/* < 600px  → everything stacked */
+@media(max-width:600px){
+  .sidebar,.content{
+    float:none;
+    width:100%;
+    margin:0;
+  }
+}
+
+/* 600–900px → flexbox layout */
+@media(min-width:600px) and (max-width:900px){
+  .container{
+    display:flex;
+    flex-direction:column;
+  }
+  .sidebar{
+    width:100%;
+    order:1;
+  }
+  .content{
+    width:100%;
+    order:2;
+    margin:0;
+  }
+}
+
+/* >900px → wide screen flexbox */
+@media(min-width:900px){
+  .container{
+    display:flex;
+  }
+  .sidebar{
+    width:220px;
+  }
+  .content{
+    flex:1;
+    margin:0;
+  }
+}

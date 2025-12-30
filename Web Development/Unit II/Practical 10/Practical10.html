@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Div and Span Layout Example</title>
+<style>
+  /* Container div to hold the layout */
+  .container {
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+  }
+  /* Header styled with div */
+  .header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  /* Main content and sidebar layout using div and flexbox */
+  .content-wrapper {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+  }
+  .main-content {
+    flex: 3;
+    background-color: #f9f9f9;
+    padding: 10px;
+  }
+  .sidebar {
+    flex: 1;
+    background-color: #ddd;
+    padding: 10px;
+  }
+  /* Using span for inline text highlights */
+  .highlight {
+    color: #e91e63;
+    font-weight: bold;
+  }
+  /* Footer with div */
+  .footer {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    background-color: #333;
+    color: white;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">Web Technologies</div>
+  <div class="content-wrapper">
+    <div class="main-content">
+      <p>"Web-tech" refers to technologies and tools used in the development and maintenance of 
+       websites and web applications. This includes programming languages like <span class="highlight">
+        HTML, CSS, and JavaScript</span> as well as frameworks and libraries such as React, Angular, and Vue.</p>
+      <p>Essentially, webtech is what makes the internet work.</p>
+      <p><h2>Key components of web technology</h2>
+        <ul><li>Programming and markup languages: These are the building blocks for creating web content and applications.</li>
+              <li>HTML (HyperText Markup Language): Defines the structure of web pages.</li>
+              <li>CSS (Cascading Style Sheets): Controls the presentation and styling of web pages.</li>
+              <li>JavaScript: Adds interactivity and dynamic behavior to web pages.</li>
+              <li>Server-side languages: Examples include PHP, Python, and Java, which are used for back-end logic and database management.</li></ul></p>
+    </div>
+    <div class="sidebar">
+      <p><img src="rungta image.jpeg" width="500"></p>
+      </div>
+    </div>
+</div>
+
+</body>
+</html>
